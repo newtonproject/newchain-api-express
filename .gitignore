@@ -1,0 +1,11 @@
+/wallet
+debug.test
+debug
+.idea/*
+.vscode/*
+/newchain-api-express
+newchain-api-express.exe
+/config.toml
+/config.server.toml
+/config.client.toml
+/error.log

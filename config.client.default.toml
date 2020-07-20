@@ -1,0 +1,7 @@
+walletpath = "./wallet"
+
+[client]
+  chainid = 1007
+  gaslimit = 21000
+  gasprice = "100"
+  rpcurl = "http://127.0.0.1:8888"

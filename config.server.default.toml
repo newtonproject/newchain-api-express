@@ -1,0 +1,13 @@
+# config for API cmd
+Host = "127.0.0.1:8888" # listening host
+
+rpcurl = "https://rpc1.newchain.newtonproject.org/"
+
+# the config of notify publish
+[Notify]
+    Server = "tcp://127.0.0.1:6883"
+    Username = "username"
+    Password = "password"
+    PrefixTopic = "newchain/api" # topic = <PrefixTopic>/<address>/<confirmedBlock>
+    ClientID = "NewChainAPIExpress" # Default "NewChainAPIExpress"
+    #QoS = 1

@@ -53,9 +53,14 @@
 
 ## 安装
 
+安装 newchain-api-express 程序：
+
 ```bash
 git clone https://github.com/newtonproject/newchain-api-express.git && cd newchain-api-express && make install
 ```
+
+服务器端需要配置MQTT服务，可参考[MQTT](http://mqtt.org/)或者使用[AWS MQ](https://aws.amazon.com/amazon-mq)
+
 
 ## API
 
@@ -83,7 +88,8 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"newton_getBaseInfo","params":{"a
     "jsonrpc":"2.0",
     "id":1,
     "result":{
-        "nonce":"0x4df",
+        "nonceLatest": "0x543",
+        "noncePending": "0x543",
         "gasPrice":"0x64",
         "networkID":1007,
         "balance":"0x32b6fbe3b559ae26fceaf1"
